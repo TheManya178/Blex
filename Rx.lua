@@ -1401,7 +1401,8 @@ function redzlib:SetScale(NewScale)
 end
 
 function redzlib:MakeWindow(Configs)
-
+	local WTitle = Configs[1] or Configs.Name or Configs.Title or "redz Library V5"
+	local WMiniText = Configs[2] or Configs.SubTitle or ""
 	
 	Settings.ScriptFile = Configs[3] or Configs.SaveFolder or false
 	
